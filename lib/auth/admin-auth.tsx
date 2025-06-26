@@ -6,7 +6,8 @@ interface AdminAuthContextType { isAuthenticated: boolean login: (password: stri
 
 const AdminAuthContext = createContext<AdminAuthContextType | undefined>(undefined)
 
-/* ── Configuration ─────────────────────────────────────────────────────*/ const ADMIN_PASSWORD = process.env.NEXT_PUBLIC_ADMIN_PASSWORD /*⚠️ Public env variable, not secure for sensitive apps */ const SESSION_DURATION = 60 * 60 * 1000 /* 1 hour in milliseconds */ const AUTH_KEY = "portfolio_admin_auth"
+/* ── Configuration ─────────────────────────────────────────────────────*/ const ADMIN_PASSWORD = process.env.NEXT_PUBLIC_ADMIN_PASSWORD 
+const SESSION_DURATION = 60 * 60 * 1000 /* 1 hour in milliseconds */ const AUTH_KEY = "portfolio_admin_auth"
 
 /* ── Custom hook for using admin auth ─────────────────────────────────── */ export function useAdminAuth() { const ctx = useContext(AdminAuthContext) if (!ctx) throw new Error("useAdminAuth must be used within an AdminAuthProvider") return ctx }
 
