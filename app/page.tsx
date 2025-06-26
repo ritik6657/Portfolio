@@ -16,7 +16,7 @@ export default function HomePage() {
         sameAs={["https://github.com/harshit16g", "https://www.linkedin.com/in/harshit-lodhi-5575b8314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"]}
       />
       <WebsiteStructuredData
-        url="https://your-domain.com"
+        url="https://oeeez.online"
         name="Harshit Lodhi Portfolio"
         description="Full-Stack Developer Portfolio showcasing projects and expertise in modern web technologies."
       />
