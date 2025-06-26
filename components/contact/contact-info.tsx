@@ -32,13 +32,13 @@ export function ContactInfo() {
     {
       name: "GitHub",
       icon: Github,
-      href: "https://github.com/harshitlodhi", // Update with actual GitHub
+      href: "https://github.com/harshit16g",
       color: "hover:text-gray-900 dark:hover:text-gray-100",
     },
     {
       name: "LinkedIn",
       icon: Linkedin,
-      href: "https://linkedin.com/in/harshitlodhi", // Update with actual LinkedIn
+      href: "https://www.linkedin.com/in/harshit-lodhi-5575b8314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       color: "hover:text-blue-600",
     },
   ]
