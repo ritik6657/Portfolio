@@ -13,7 +13,7 @@ export default function HomePage() {
         url="https://your-domain.com"
         email="harshitlodhi220593@acropolis.in"
         location="Indore, India"
-        sameAs={["https://github.com/harshitlodhi", "https://linkedin.com/in/harshitlodhi"]}
+        sameAs={["https://github.com/harshit16g", "https://www.linkedin.com/in/harshit-lodhi-5575b8314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"]}
       />
       <WebsiteStructuredData
         url="https://your-domain.com"
