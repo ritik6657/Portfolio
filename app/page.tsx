@@ -10,10 +10,13 @@ export default function HomePage() {
         name="Harshit Lodhi"
         jobTitle="Full-Stack Developer"
         description="Full-Stack Developer specializing in React, Next.js, and AI/ML. Building smart and scalable applications."
-        url="https://your-domain.com"
+        url="https://oeeez.online"
         email="harshitlodhi220593@acropolis.in"
         location="Indore, India"
-        sameAs={["https://github.com/harshit16g", "https://www.linkedin.com/in/harshit-lodhi-5575b8314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"]}
+        sameAs={[
+          "https://github.com/harshit16g",
+          "https://www.linkedin.com/in/harshit-lodhi-5575b8314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        ]}
       />
       <WebsiteStructuredData
         url="https://oeeez.online"
