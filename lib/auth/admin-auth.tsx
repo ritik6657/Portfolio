@@ -15,7 +15,7 @@ const AdminAuthContext = createContext<AdminAuthContextType | undefined>(undefin
 // ———————————————————————————————————————————
 // Production settings
 // ———————————————————————————————————————————
-const ADMIN_PASSWORD = "Amplify1601$" // ✔ secure prod password
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD; // ✔ secure prod password
 const SESSION_DURATION = 60 * 60 * 1000 // 1 hour in ms
 const AUTH_KEY = "portfolio_admin_auth"
 
