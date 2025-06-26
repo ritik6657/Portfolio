@@ -19,15 +19,23 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://your-domain.com"), // Update with actual domain
+  metadataBase: new URL("https://oeeez.online"),
   title: {
     default: "Harshit Lodhi - Full-Stack Developer & AI Enthusiast",
     template: "%s | Harshit Lodhi",
   },
   description:
     "Full-Stack Developer specializing in React, Next.js, and AI/ML. Building smart and scalable applications with modern technologies.",
-  keywords: ["Full-Stack Developer", "React", "Next.js", "AI", "Machine Learning", "Web Development", "Harshit Lodhi"],
-  authors: [{ name: "Harshit Lodhi", url: "https://your-domain.com" }],
+  keywords: [
+    "Full-Stack Developer",
+    "React",
+    "Next.js",
+    "AI",
+    "Machine Learning",
+    "Web Development",
+    "Harshit Lodhi"
+  ],
+  authors: [{ name: "Harshit Lodhi", url: "https://harshitlodhisportfolio.vercel.app" }],
   creator: "Harshit Lodhi",
   publisher: "Harshit Lodhi",
   robots: {
@@ -44,14 +52,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://your-domain.com",
+    url: "https://oeeez.online",
     siteName: "Harshit Lodhi Portfolio",
     title: "Harshit Lodhi - Full-Stack Developer & AI Enthusiast",
     description:
       "Full-Stack Developer specializing in React, Next.js, and AI/ML. Building smart and scalable applications.",
     images: [
       {
-        url: "/og-image.jpg", // Add this image to public folder
+        url: "https://drive.google.com/uc?id=1foz3FYIN-6ZhIpzE8goPyBtyQ-FDAtFT", // Direct view link from Google Drive
         width: 1200,
         height: 630,
         alt: "Harshit Lodhi - Full-Stack Developer",
@@ -62,13 +70,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Harshit Lodhi - Full-Stack Developer & AI Enthusiast",
     description: "Full-Stack Developer specializing in React, Next.js, and AI/ML.",
-    images: ["/og-image.jpg"],
-    creator: "@harshitlodhi", // Update with actual Twitter handle
+    images: ["https://drive.google.com/uc?id=1foz3FYIN-6ZhIpzE8goPyBtyQ-FDAtFT"],
+    creator: "@harshitlodhi",
   },
   alternates: {
-    canonical: "https://your-domain.com",
+    canonical: "https://oeeez.online",
   },
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -84,6 +91,10 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#000000" />
+        
+        {/* Social Links for verification and SEO */}
+        <link rel="me" href="https://github.com/harshit16g" />
+        <link rel="me" href="https://www.linkedin.com/in/harshit-lodhi-5575b8314" />
       </head>
       <body className={`${inter.className} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
