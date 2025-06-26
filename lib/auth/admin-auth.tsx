@@ -6,19 +6,19 @@ interface AdminAuthContextType { isAuthenticated: boolean login: (password: stri
 
 const AdminAuthContext = createContext<AdminAuthContextType | undefined>(undefined)
 
-// ── Configuration ───────────────────────────────────────────────────── const ADMIN_PASSWORD = process.env.NEXT_PUBLIC_ADMIN_PASSWORD // ⚠️ Public env variable, not secure for sensitive apps const SESSION_DURATION = 60 * 60 * 1000 // 1 hour in milliseconds const AUTH_KEY = "portfolio_admin_auth"
+/* ── Configuration ───────────────────────────────────────────────────── / const ADMIN_PASSWORD = process.env.NEXT_PUBLIC_ADMIN_PASSWORD / ⚠️ Public env variable, not secure for sensitive apps / const SESSION_DURATION = 60 * 60 * 1000 / 1 hour in milliseconds */ const AUTH_KEY = "portfolio_admin_auth"
 
-// ── Custom hook for using admin auth ─────────────────────────────────── export function useAdminAuth() { const ctx = useContext(AdminAuthContext) if (!ctx) throw new Error("useAdminAuth must be used within an AdminAuthProvider") return ctx }
+/* ── Custom hook for using admin auth ─────────────────────────────────── */ export function useAdminAuth() { const ctx = useContext(AdminAuthContext) if (!ctx) throw new Error("useAdminAuth must be used within an AdminAuthProvider") return ctx }
 
-// ── Context provider component ───────────────────────────────────────── export function AdminAuthProvider({ children }: { children: React.ReactNode }) { const [isAuthenticated, setIsAuthenticated] = useState(false) const [loading, setLoading] = useState(true) const [error, setError] = useState<string | null>(null)
+/* ── Context provider component ───────────────────────────────────────── */ export function AdminAuthProvider({ children }: { children: React.ReactNode }) { const [isAuthenticated, setIsAuthenticated] = useState(false) const [loading, setLoading] = useState(true) const [error, setError] = useState<string | null>(null)
 
-// ── Load session from localStorage on mount ────────────────────────── useEffect(() => { const raw = localStorage.getItem(AUTH_KEY) if (raw) { try { const { authenticated, timestamp } = JSON.parse(raw) if (authenticated && Date.now() - timestamp < SESSION_DURATION) { setIsAuthenticated(true) } else { localStorage.removeItem(AUTH_KEY) } } catch { localStorage.removeItem(AUTH_KEY) } } setLoading(false) }, [])
+/* ── Load session from localStorage on mount ────────────────────────── */ useEffect(() => { const raw = localStorage.getItem(AUTH_KEY) if (raw) { try { const { authenticated, timestamp } = JSON.parse(raw) if (authenticated && Date.now() - timestamp < SESSION_DURATION) { setIsAuthenticated(true) } else { localStorage.removeItem(AUTH_KEY) } } catch { localStorage.removeItem(AUTH_KEY) } } setLoading(false) }, [])
 
-// ── Handle login ───────────────────────────────────────────────────── const login = (password: string) => { if (password === ADMIN_PASSWORD) { setIsAuthenticated(true) localStorage.setItem(AUTH_KEY, JSON.stringify({ authenticated: true, timestamp: Date.now() })) setError(null) return true } setError("Invalid password") return false }
+/* ── Handle login ───────────────────────────────────────────────────── */ const login = (password: string) => { if (password === ADMIN_PASSWORD) { setIsAuthenticated(true) localStorage.setItem(AUTH_KEY, JSON.stringify({ authenticated: true, timestamp: Date.now() })) setError(null) return true } setError("Invalid password") return false }
 
-// ── Handle logout ──────────────────────────────────────────────────── const logout = () => { setIsAuthenticated(false) localStorage.removeItem(AUTH_KEY) }
+/* ── Handle logout ──────────────────────────────────────────────────── */ const logout = () => { setIsAuthenticated(false) localStorage.removeItem(AUTH_KEY) }
 
-// ── Auto logout when session expires ───────────────────────────────── useEffect(() => { if (!isAuthenticated) return const interval = setInterval(() => { const raw = localStorage.getItem(AUTH_KEY) if (!raw) return logout()
+/* ── Auto logout when session expires ───────────────────────────────── */ useEffect(() => { if (!isAuthenticated) return const interval = setInterval(() => { const raw = localStorage.getItem(AUTH_KEY) if (!raw) return logout()
 
 try {
     const { timestamp } = JSON.parse(raw)
@@ -26,7 +26,7 @@ try {
   } catch {
     logout()
   }
-}, 60_000) // check every minute
+}, 60_000) /* check every minute */
 
 return () => clearInterval(interval)
 
