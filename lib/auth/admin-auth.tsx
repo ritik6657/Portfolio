@@ -21,10 +21,9 @@ export function useAdminAuth() {
 
 export function AdminAuthProvider({ children }: { children: React.ReactNode }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
-  const [loading, setLoading] = useState(true) // Prevent flash of unauthenticated UI
+  const [loading, setLoading] = useState(true) // start true to prevent flash
   const [error, setError] = useState<string | null>(null)
 
-  // Check auth status on mount
   useEffect(() => {
     checkAuthStatus()
   }, [])
@@ -60,13 +59,12 @@ export function AdminAuthProvider({ children }: { children: React.ReactNode }) {
         body: JSON.stringify({ password })
       })
 
+      const raw = await response.text() // read once
       let data: any = null
 
       try {
-        data = await response.json()
+        data = JSON.parse(raw)
       } catch (parseError) {
-        // Fallback if response is not JSON
-        const raw = await response.text()
         console.error("Failed to parse JSON response:", parseError, "Raw response:", raw)
         setError("Unexpected server response")
         return false
