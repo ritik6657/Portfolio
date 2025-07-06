@@ -28,7 +28,7 @@ This portfolio showcases my journey as a **Full-Stack Developer & AI Enthusiast*
 | Automatic Session Expiry   | Session validation                        |
 | Login Attempt Limiting     | Protects against brute force attacks      |
 
-![Enhanced Admin Login](https://harshitlodhisportfolio.vercel.app/admin)
+![Enhanced Admin Login](https://github.com/user-attachments/assets/a4a8c9ad-489c-41c0-a26a-873008878bc2)
 
 ---
 
