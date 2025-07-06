@@ -1,12 +1,6 @@
-Here’s an enhanced, professional version of your README, updated to include live previews that render on GitHub, along with your mermaid graphs, all styled to look clean and attractive on the repo homepage:
-
-I also added optional GitHub shields (badges) for more polish.
-Feel free to adjust image URLs, shields, or text.
 
 
----
-
-📃 Dynamic Portfolio
+#📃 Dynamic Portfolio
 
    
 
@@ -16,7 +10,7 @@ Showcasing my journey as a Full-Stack Developer & AI Enthusiast, built with mode
 
 ---
 
-🌟 Highlights
+#🌟 Highlights
 
 ✅ Live Content: All portfolio data fetched in real-time from Supabase (projects, experience, blog, testimonials, etc.)
 ✅ Modern Tech Stack: Next.js, React, Tailwind CSS, Framer Motion, Supabase
@@ -30,12 +24,8 @@ Showcasing my journey as a Full-Stack Developer & AI Enthusiast, built with mode
 
 🖼️ Previews
 
-> Live data-driven sections & clean, animated UI:
-
-
-
 <p align="center">
-  <img src="https://harshitlodhisportfolio.vercel.app/home width="80%">
+  <img src="https://harshitlodhisportfolio.vercel.app/home" width="80%">
 </p><p align="center">
   <img src="https://harshitlodhisportfolio.vercel.app/projects" width="80%">
 </p><p align="center">
