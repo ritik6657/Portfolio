@@ -43,7 +43,7 @@ graph TD
   B -- Contact --> F[ContactForm (rate-limited)]
   B -- Admin (Protected) --> G[AdminLogin & Dashboard]
   G --> H[Manage Projects, Connections, Feedback, Stats]
-````
+```
 
 ---
 
