@@ -1,6 +1,4 @@
-
-
-#📃 Dynamic Portfolio
+###📃 Portfolio
 
    
 
@@ -21,14 +19,15 @@ Showcasing my journey as a Full-Stack Developer & AI Enthusiast, built with mode
 
 
 ---
+## Authentication System
+- ✅ JWT-based authentication with secure HTTP-only cookies
+- ✅ Server-side password validation via API routes
+- ✅ Automatic session expiration and validation
+- ✅ Enhanced login attempt limiting with proper error handling
 
-🖼️ Previews
+![Enhanced Admin Login](https://github.com/user-attachments/assets/a4a8c9ad-489c-41c0-a26a-873008878bc2)
 
-![Preview Home](https://harshitlodhisportfolio.vercel.app/home) 
-
----
-
-📊 Application Flow
+##📊 Application Flow
 
 graph TD
   A[Visitor lands on Home] --> B{Chooses Section}
@@ -39,9 +38,6 @@ graph TD
   B -- Admin (Protected) --> G[AdminLogin & Dashboard]
   G --> H[Manage Projects, Connections, Feedback, Stats]
 
-
----
-
 🔄 Data Flow & Admin Overview
 
 flowchart LR
@@ -51,11 +47,43 @@ flowchart LR
   FrontendApp -- Fetch Live Data --> SupabaseDB
   SupabaseDB -- Realtime Sync --> FrontendApp
 
-(These diagrams are rendered natively on GitHub with Mermaid)
+---
+## Dashboard Animations
+![Admin Dashboard](https://github.com/user-attachments/assets/f5c2ffe0-dde8-4853-90ff-c95328d9c3cf)
 
+- 🎬 Smooth tab transitions with AnimatePresence
+- 💫 Staggered loading animations for better UX
+- 🎯 Hover effects and micro-interactions
+- ⏱️ Real-time session timer with animated badges
+
+## 📊 New Data Management Features
+
+### Projects Management Tab
+![Projects Management](https://github.com/user-attachments/assets/0c54b338-00c1-4164-a930-b19c1362c9c4)
+
+**Features Added:**
+- ✅ Complete CRUD interface for portfolio projects
+- 🔍 Real-time search and filtering
+- 🏷️ Status management (Active, Draft, Archived)
+- ⭐ Featured project toggle
+- 🔗 Direct links to demo/GitHub
+- 🎨 Animated table rows with staggered entry
+
+### Experience Management Tab
+- ✅ Full experience editing capabilities
+- 📅 Date range management with "current position" toggle
+- 🏢 Employment type categorization
+- 🔧 Technology stack management
+- 📍 Location tracking
+
+### Enhanced Stats Dashboard
+![Enhanced Stats](https://github.com/user-attachments/assets/cb6b11e8-7c66-43d4-8c42-3db63a291571)
+
+- 🎯 Animated loading states
+- 📈 Placeholder for advanced analytics
+- 🎪 Engaging animations while data loads
 
 ---
-
 🚀 Getting Started
 
 1️⃣ Clone & Install
