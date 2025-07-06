@@ -40,7 +40,7 @@ graph TD
   B -- Projects --> C[ProjectsGrid fetches from Supabase]
   B -- Experience --> D[ExperienceTimeline fetches from Supabase]
   B -- Blog --> E[BlogGrid fetches posts]
-  B -- Contact --> F[ContactForm (rate-limited)]
+  B -- Contact --> F[ContactForm- rate-limited]
   B -- Admin (Protected) --> G[AdminLogin & Dashboard]
   G --> H[Manage Projects, Connections, Feedback, Stats]
 ```
