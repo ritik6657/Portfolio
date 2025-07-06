@@ -24,13 +24,7 @@ Showcasing my journey as a Full-Stack Developer & AI Enthusiast, built with mode
 
 🖼️ Previews
 
-<p align="center">
-  <img src="https://harshitlodhisportfolio.vercel.app/home" width="80%">
-</p><p align="center">
-  <img src="https://harshitlodhisportfolio.vercel.app/projects" width="80%">
-</p><p align="center">
-  <img src="https://harshitlodhisportfolio.vercel.app/about"
-</p>
+![Preview Home](https://harshitlodhisportfolio.vercel.app/home) 
 
 ---
 
