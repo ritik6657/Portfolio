@@ -1,6 +1,3 @@
-Sure, here is the enhanced README in proper Markdown format:
-
-Copy
 # 📃 Portfolio
 
 Welcome to my dynamic, full-stack portfolio application! 🚀 This portfolio showcases my journey as a Full-Stack Developer & AI Enthusiast, built with modern technologies, a live Supabase backend, and a secure admin dashboard.
