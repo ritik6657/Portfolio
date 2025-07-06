@@ -1,5 +1,4 @@
 
-````markdown
 # 📃 Portfolio
 
 Welcome to my dynamic, full-stack portfolio application! 🚀  
