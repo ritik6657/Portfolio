@@ -1,96 +1,154 @@
-# 🚀 Harshit Lodhi — Full-Stack Developer Portfolio
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://harshitlodhisportfolio.vercel.app)
-[![GitHub](https://img.shields.io/badge/GitHub-harshitlodhi16-black?style=for-the-badge&logo=github)](https://github.com/harshitlodhi16)
-[![Made with Supabase](https://img.shields.io/badge/Database-Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com/)
-[![Built with Next.js](https://img.shields.io/badge/Framework-Next.js-000000?style=for-the-badge&logo=nextdotjs)](https://nextjs.org/)
-[![ShadCN UI](https://img.shields.io/badge/UI-shadcn/ui-4B5563?style=for-the-badge)](https://ui.shadcn.com/)
+# 📃Portfolio
+
+Welcome to my dynamic portfolio web application! 🚀  
+This project showcases my expertise as a Full-Stack Developer and AI Enthusiast, featuring modern web technologies, interactive components, and a fully integrated admin dashboard.
 
 ---
 
-## 🌐 Live Demo
+## 🌟 Highlights
 
-👉 **[https://harshitlodhisportfolio.vercel.app](https://harshitlodhisportfolio.vercel.app)**
-
-This is my personal portfolio — built to showcase my work, skills, experience, and technical passion as a Full-Stack Developer and AI/ML enthusiast.
-
----
-
-## 🧠 Overview
-
-This dynamic and responsive portfolio features:
-- Real-time data fetched from Supabase (projects, fun facts, experience, etc.)
-- A clean and modern UI using ShadCN and Tailwind
-- Fully SEO-optimized with structured data (JSON-LD)
-- Contact section with interactive animations
-- Authentication-ready with `useAuth` context
+- **Dynamic Content:** All portfolio data (projects, experiences, certifications, testimonials, etc.) is fetched from a live Supabase backend. Admin updates appear instantly.
+- **Modern Stack:** Built with [Next.js](https://nextjs.org/), [React](https://react.dev/), [Supabase](https://supabase.com/), [Tailwind CSS](https://tailwindcss.com/), and [Framer Motion](https://www.framer.com/motion/).
+- **Admin Dashboard:** Secure, rate-limited, and session-based admin panel for content management (connections, feedback, reviews, projects, stats).
+- **Rich Animations:** Smooth UI/UX with Framer Motion.
+- **SEO & Analytics:** Structured data, Open Graph, and portfolio performance tracking.
+- **Modular Design:** All sections (Projects, Experience, Education, Testimonials, Toolbox, Blog, etc.) are modular and scalable.
 
 ---
 
-## 🛠️ Tech Stack
+## 🖥️ Preview
 
-| Category     | Tools / Libraries |
-|--------------|-------------------|
-| **Frontend** | Next.js (App Router), React |
-| **Styling**  | Tailwind CSS, ShadCN UI |
-| **Database** | Supabase (PostgreSQL) |
-| **Auth**     | Supabase Auth |
-| **Animations** | Framer Motion |
-| **Icons**    | Lucide-react |
-| **Deployment** | Vercel |
+![Preview Home](https://drive.google.com/uc?id=1foz3FYIN-6ZhIpzE8goPyBtyQ-FDAtFT)
+
+> _Home, Projects, and Experience sections with live data and engaging UI._
 
 ---
 
-## ✨ Features
+## 📊 Application Flow
 
-- 🎯 Fully dynamic content from Supabase
-- 🌙 Light/dark mode toggle
-- ⚡ Fast load time & optimized performance
-- 🧩 Modular, well-structured components
-- 📄 Structured metadata with `metadata.ts` and JSON-LD
-- 📱 Mobile-first responsive layout
-- 🔗 Integrated GitHub & LinkedIn social links
-- 📬 Contact form & quick-reply card
+```mermaid
+graph TD
+    A[Visitor lands on Home] --> B{Selects Section}
+    B -- Projects --> C[ProjectsGrid fetches from Supabase]
+    B -- Experience --> D[ExperienceTimeline fetches from Supabase]
+    B -- Blog --> E[BlogGrid fetches published posts]
+    B -- Contact --> F[ContactForm with Rate Limiting]
+    B -- Admin (Protected) --> G[AdminLogin & Dashboard]
+    G --> H[Manage Connections/Reviews/Feedback/Projects/Stats]
+```
 
 ---
 
-## 🧪 Getting Started
+## 📈 Data Flow & Admin Overview
+
+```mermaid
+flowchart LR
+    UserInput -- Contact/Review/Feedback --> SupabaseDB
+    AdminPanel -- Auth+CRUD --> SupabaseDB
+    Visitor -- View --> WebApp
+    WebApp -- Fetch Data --> SupabaseDB
+    SupabaseDB -- Realtime Sync --> WebApp
+```
+
+---
+
+## 🚦 Getting Started
+
+### 1. Clone & Install
 
 ```bash
-# Clone the repository
-git clone https://github.com/harshitlodhi16/developer-portfolio.git
-
-# Go into the directory
-cd developer-portfolio
-
-# Install dependencies
+git clone https://github.com/Harshit16g/Portfolio.git
+cd Portfolio
 npm install
+```
 
-# Run the development server
+### 2. Setup Environment
+
+Create a `.env.local` file:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
+```
+
+### 3. Run Locally
+
+```bash
 npm run dev
-
-Now visit http://localhost:3000 🚀
-
+```
 
 ---
 
-📬 Contact Me
+## 🔒 Admin Access
 
-🔗 LinkedIn
-
-💻 GitHub
-
-📧 harshitlodhi220593@acropolis.in
-
-🌐 Portfolio
-
-🏠 Main Site
-
-
+- Go to `/admin`
+- Enter the protected password (set in your backend/API route)
+- Admin features: View/manage connections, reviews, feedback, projects, experience, and stats.  
+  Rate-limited and session-protected for security.
 
 ---
 
-> Designed, built & maintained with love by Harshit Lodhi 💙
+## 🧩 Main Features
 
+- **Home:** Hero, featured projects, tech stack, connect section.
+- **Projects:** All portfolio projects with tags, live/demo/code links.
+- **Experience:** Timeline of professional roles (with technologies).
+- **Certifications & Education:** Academic & professional achievements.
+- **Testimonials:** Client & peer reviews, live approval via admin.
+- **Blog:** Dynamic blog posts with tags and reading time.
+- **Contact:** Rate-limited contact form, quick info, social links.
+- **Stats:** Live portfolio metrics and growth rate.
 
+---
+
+## 🛠️ Technologies Used
+
+- **Frontend:** Next.js, React, TypeScript, Tailwind CSS, Framer Motion, Lucide Icons
+- **Backend:** Supabase (Postgres + Auth + Realtime)
+- **Admin:** Custom panel, session & rate limiting, secure API endpoints
+
+---
+
+## 📂 Directory Structure
+
+```
+app/
+  ├── about/
+  ├── admin/
+  ├── blog/
+  ├── certifications/
+  ├── contact/
+  ├── education/
+  ├── experience/
+  ├── projects/
+  ├── stats/
+  ├── testimonials/
+  ├── toolbox/
+components/
+lib/
+hooks/
+```
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome for bug fixes, improvements, and new features.  
+For major changes, please open an issue first.
+
+---
+
+## 📬 Contact
+
+- Email: harshitlodhi220593@acropolis.in
+- [GitHub](https://github.com/harshit16g)
+- [LinkedIn](https://www.linkedin.com/in/harshit-lodhi-5575b8314)
+
+---
+
+## ⭐️ Star this repo if you like it!
+
+---
 
