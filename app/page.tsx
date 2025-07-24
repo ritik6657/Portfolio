@@ -7,15 +7,15 @@ export default function HomePage() {
   return (
     <>
       <PersonStructuredData
-        name="Harshit Lodhi"
-        jobTitle="Full-Stack Developer"
-        description="Full-Stack Developer specializing in React, Next.js, and AI/ML. Building smart and scalable applications."
-        url="https://oeeez.online"
-        email="harshitlodhi220593@acropolis.in"
+        name="Ritik Raghuwanshi"
+        jobTitle="Software Developer"
+        description="Software Developer passionate about creating innovative solutions. Specializing in modern web technologies and software development."
+        url="https://ritik-portfolio.com"
+        email="ritik.raghuwanshi@example.com"
         location="Indore, India"
         sameAs={[
-          "https://github.com/harshit16g",
-          "https://www.linkedin.com/in/harshit-lodhi-5575b8314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          "https://github.com/ritik6657",
+          "https://linkedin.com/in/ritik-raghuwanshi"
         ]}
       />
       <WebsiteStructuredData

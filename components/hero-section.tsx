@@ -7,7 +7,7 @@ import { TypingEffect } from "./typing-effect"
 import { ArrowRight } from "lucide-react"
 
 export function HeroSection() {
-  const subtexts = ["React Developer", "Supabase Expert", "UX-focused Engineer", "Next.js Enthusiast"]
+  const subtexts = ["Software Developer", "Full Stack Engineer", "Problem Solver", "Tech Enthusiast"]
 
   const containerVariants = {
     hidden: { opacity: 0 },
