@@ -42,7 +42,7 @@ export function HeroSection() {
         className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none bg-clip-text text-transparent bg-gradient-to-r from-primary via-pink-500 to-secondary"
         variants={itemVariants}
       >
-        Hi, I&apos;m Harshit.
+        Hi, I&apos;m Ritik.
       </motion.h1>
       <motion.p
         className="mt-4 max-w-[700px] text-lg text-muted-foreground sm:text-xl md:text-2xl"

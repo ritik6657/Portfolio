@@ -111,7 +111,7 @@ flowchart LR
 ### 1️⃣ Clone & Install
 
 ```bash
-git clone https://github.com/Harshit16g/Portfolio.git
+git clone https://github.com/Ritik16g/Portfolio.git
 cd Portfolio
 npm install
 ```
@@ -203,11 +203,11 @@ For major changes, please open an issue first to discuss your idea.
 
 | Method   | Details                                                                   |
 | -------- | ------------------------------------------------------------------------- |
-| Email    | [harshitlodhi220593@acropolis.in](mailto:harshitlodhi220593@acropolis.in) |
-| GitHub   | [Harshit16g](https://github.com/Harshit16g)                               |
-| LinkedIn | [Harshit Lodhi](https://linkedin.com/in/...)                              |
+| Email    | [Ritiklodhi220593@acropolis.in](mailto:Ritiklodhi220593@acropolis.in) |
+| GitHub   | [Ritik16g](https://github.com/Ritik16g)                               |
+| LinkedIn | [Ritik Raghuwanshi](https://linkedin.com/in/...)                              |
 
 ⭐ Like this project? Star it!
 
-Crafted with Next.js, Supabase, and ☕ by **Harshit Lodhi**
+Crafted with Next.js, Supabase, and ☕ by **Ritik Raghuwanshi**
 

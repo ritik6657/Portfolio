@@ -2,7 +2,7 @@ import { BlogGrid } from "@/components/blog/blog-grid"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Blog | Harshit Lodhi",
+  title: "Blog | Ritik Raghuwanshi",
   description: "Thoughts, tutorials, and insights about web development, AI, and technology.",
 }
 

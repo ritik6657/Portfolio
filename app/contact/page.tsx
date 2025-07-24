@@ -3,9 +3,9 @@ import { ContactInfo } from "@/components/contact/contact-info"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Contact Me | Harshit Lodhi",
+  title: "Contact Me | Ritik Raghuwanshi",
   description:
-    "Get in touch with Harshit Lodhi for collaboration opportunities, project inquiries, or just to say hello.",
+    "Get in touch with Ritik Raghuwanshi for collaboration opportunities, project inquiries, or just to say hello.",
 }
 
 export default function ContactPage() {

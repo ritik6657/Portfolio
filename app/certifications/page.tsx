@@ -2,7 +2,7 @@ import { CertificationsGrid } from "@/components/certifications/certifications-g
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "My Certifications | Harshit Lodhi",
+  title: "My Certifications | Ritik Raghuwanshi",
   description: "Professional certifications and achievements in web development, cloud computing, and technology.",
 }
 

@@ -2,9 +2,9 @@ import { ExperienceTimeline } from "@/components/experience/experience-timeline"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "My Experience | Harshit Lodhi",
+  title: "My Experience | Ritik Raghuwanshi",
   description:
-    "Explore Harshit Lodhi's professional journey, roles, and contributions in various tech projects and internships.",
+    "Explore Ritik Raghuwanshi's professional journey, roles, and contributions in various tech projects and internships.",
 }
 
 export default function ExperiencePage() {

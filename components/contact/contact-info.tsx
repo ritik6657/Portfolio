@@ -11,8 +11,8 @@ export function ContactInfo() {
     {
       icon: Mail,
       label: "Email",
-      value: "harshitlodhi220593@acropolis.in",
-      href: "mailto:harshitlodhi220593@acropolis.in",
+      value: "Ritiklodhi220593@acropolis.in",
+      href: "mailto:Ritiklodhi220593@acropolis.in",
     },
     {
       icon: Phone,
@@ -32,13 +32,13 @@ export function ContactInfo() {
     {
       name: "GitHub",
       icon: Github,
-      href: "https://github.com/harshit16g",
+      href: "https://github.com/Ritik16g",
       color: "hover:text-gray-900 dark:hover:text-gray-100",
     },
     {
       name: "LinkedIn",
       icon: Linkedin,
-      href: "https://www.linkedin.com/in/harshit-lodhi-5575b8314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      href: "https://www.linkedin.com/in/Ritik-lodhi-5575b8314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       color: "hover:text-blue-600",
     },
   ]

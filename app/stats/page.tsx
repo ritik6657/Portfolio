@@ -2,7 +2,7 @@ import { StatsOverview } from "@/components/stats/stats-overview"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Portfolio Stats | Harshit Lodhi",
+  title: "Portfolio Stats | Ritik Raghuwanshi",
   description: "Portfolio metrics and performance statistics.",
 }
 

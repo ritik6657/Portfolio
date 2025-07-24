@@ -14,8 +14,8 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://oeeez.online"),
   title: {
-    default: "Harshit Lodhi - Full-Stack Developer & AI Enthusiast",
-    template: "%s | Harshit Lodhi",
+    default: "Ritik Raghuwanshi - Full-Stack Developer & AI Enthusiast",
+    template: "%s | Ritik Raghuwanshi",
   },
   description:
     "Full-Stack Developer specializing in React, Next.js, and AI/ML. Building smart and scalable applications with modern technologies.",
@@ -26,11 +26,11 @@ export const metadata: Metadata = {
     "AI",
     "Machine Learning",
     "Web Development",
-    "Harshit Lodhi"
+    "Ritik Raghuwanshi"
   ],
-  authors: [{ name: "Harshit Lodhi", url: "https://harshitlodhisportfolio.vercel.app" }],
-  creator: "Harshit Lodhi",
-  publisher: "Harshit Lodhi",
+  authors: [{ name: "Ritik Raghuwanshi", url: "https://Ritiklodhisportfolio.vercel.app" }],
+  creator: "Ritik Raghuwanshi",
+  publisher: "Ritik Raghuwanshi",
   robots: {
     index: true,
     follow: true,
@@ -46,8 +46,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://oeeez.online",
-    siteName: "Harshit Lodhi Portfolio",
-    title: "Harshit Lodhi - Full-Stack Developer & AI Enthusiast",
+    siteName: "Ritik Raghuwanshi Portfolio",
+    title: "Ritik Raghuwanshi - Full-Stack Developer & AI Enthusiast",
     description:
       "Full-Stack Developer specializing in React, Next.js, and AI/ML. Building smart and scalable applications.",
     images: [
@@ -55,16 +55,16 @@ export const metadata: Metadata = {
         url: "https://drive.google.com/uc?id=1foz3FYIN-6ZhIpzE8goPyBtyQ-FDAtFT", // Direct view link from Google Drive
         width: 1200,
         height: 630,
-        alt: "Harshit Lodhi - Full-Stack Developer",
+        alt: "Ritik Raghuwanshi - Full-Stack Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Harshit Lodhi - Full-Stack Developer & AI Enthusiast",
+    title: "Ritik Raghuwanshi - Full-Stack Developer & AI Enthusiast",
     description: "Full-Stack Developer specializing in React, Next.js, and AI/ML.",
     images: ["https://drive.google.com/uc?id=1foz3FYIN-6ZhIpzE8goPyBtyQ-FDAtFT"],
-    creator: "@harshitlodhi",
+    creator: "@Ritiklodhi",
   },
   alternates: {
     canonical: "https://oeeez.online",
@@ -89,8 +89,8 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
         
         {/* Social Links for verification and SEO */}
-        <link rel="me" href="https://github.com/harshit16g" />
-        <link rel="me" href="https://www.linkedin.com/in/harshit-lodhi-5575b8314" />
+        <link rel="me" href="https://github.com/Ritik16g" />
+        <link rel="me" href="https://www.linkedin.com/in/Ritik-lodhi-5575b8314" />
       </head>
       <body className="font-inter antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>

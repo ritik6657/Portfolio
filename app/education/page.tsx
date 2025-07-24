@@ -2,8 +2,8 @@ import { EducationTimeline } from "@/components/education/education-timeline"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "My Education | Harshit Lodhi",
-  description: "Academic background and educational journey of Harshit Lodhi in computer science and technology.",
+  title: "My Education | Ritik Raghuwanshi",
+  description: "Academic background and educational journey of Ritik Raghuwanshi in computer science and technology.",
 }
 
 export default function EducationPage() {

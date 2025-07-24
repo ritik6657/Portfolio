@@ -2,7 +2,7 @@ import { ToolboxGrid } from "@/components/toolbox/toolbox-grid"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "My Toolbox | Harshit Lodhi",
+  title: "My Toolbox | Ritik Raghuwanshi",
   description:
     "Explore the technologies, frameworks, and tools I use to build modern web applications and solve complex problems.",
 }

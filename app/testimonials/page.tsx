@@ -2,9 +2,9 @@ import { TestimonialsGrid } from "@/components/testimonials/testimonials-grid"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Testimonials | Harshit Lodhi",
+  title: "Testimonials | Ritik Raghuwanshi",
   description:
-    "What clients and colleagues say about working with Harshit Lodhi on various projects and collaborations.",
+    "What clients and colleagues say about working with Ritik Raghuwanshi on various projects and collaborations.",
 }
 
 export default function TestimonialsPage() {

@@ -2,9 +2,9 @@ import { ProjectsGrid } from "@/components/projects/projects-grid"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "My Projects | Harshit Lodhi",
+  title: "My Projects | Ritik Raghuwanshi",
   description:
-    "Explore Harshit Lodhi's portfolio of web applications, tools, and innovative projects built with modern technologies.",
+    "Explore Ritik Raghuwanshi's portfolio of web applications, tools, and innovative projects built with modern technologies.",
 }
 
 export default function ProjectsPage() {

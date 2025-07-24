@@ -20,7 +20,7 @@ export default function HomePage() {
       />
       <WebsiteStructuredData
         url="https://oeeez.online"
-        name="Harshit Lodhi Portfolio"
+        name="Ritik Raghuwanshi Portfolio"
         description="Full-Stack Developer Portfolio showcasing projects and expertise in modern web technologies."
       />
 
